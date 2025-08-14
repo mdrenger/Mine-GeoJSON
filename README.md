@@ -90,64 +90,39 @@ Weitere Details zu den Feldern finden sich im nächsten Kapitel.
 Die folgende Tabelle listet alle aktuell definierten Felder (Properties) auf, die im properties-Block jedes GeoJSON-Features verwendet werden können. 
 Diese Definitionen sind verbindlich für alle Hersteller und Systeme, die Mine-GeoJSON implementieren.
 
-|  | Feldname | Herkunft | Beschreibung | Datentyp |
+|Nummer| Feldname | Herkunft | Beschreibung | Datentyp |
 | --- | --- | --- | --- | --- |
-| 1 | id | Eigene Definition | Eindeutige Fund-ID
-[z.B. “1,2,3,4,5,6”] | Number |
-| 2 | sensor | Eigene Definition | Messgerät 
-[z.B. “Magnetometer”] | String |
-| 3 | unit | Eigene Definition | Einheit der Messung
-[z.B. “nT”, “m”, “EA”] | String |
-| 4 | detection_confidence | Eigene Definition | Wahrscheinlichkeit für Echtheit in %
-[z.B. 0.87, 99, 1] | Number |
-| 5 | status | Eigene Definition | Status
-[”Bestätigt” / “Unbestätigt”] | Boolean |
-| 6 | source | Eigene Definition | Trägerplattform 
-[z.B. “UAV”, “UGV”] | String |
-| 7 | depth_estimate | Eigene Definition | Geschätzte Tiefe
-[z.B. -2.1, -0.3] | Number |
-| 8 | last_udpate | Eigene Definition | Letzte Aktualisierung
-[z. B. “260900Amar25”]   | String |
-| 9 | image | Eigene Definition | Optionales Bildmaterial |  |
-| 10 | geotiff | Eigene Definition | Georeferenziertes Bildmaterial (GeoTIFF) |  |
-| 11 | hazard_id | IMSMA | Minenfeld- oder Bereichs ID | String |
-| 12 | hazard_status | IMSMA | Status des Gebietes
-[”suspected”, “confirmed”] | String |
-| 13 | land_use | IMSMA | Aktuelle Landnutzung
-[z.B. Feld, Straße] | String |
-| 14 | accessibility | IMSMA | Zugangsbeschränkungen des sondierten Gebietes
-[Freitext] | String |
-| 15 | survey_type | IMSMA | Erkundungsmethode 
-[”technical”, “non-technical”] | String |
-| 16 | data_source | IMSMA | Quelle der Information 
-[”KI”, “NGO”, “Soldat”} | String |
-| 17 | verfication_type | IMSMA | Art der Überprüfung nach Sondierung
-[Freitext: “visuell”, “manuell”, “etc.”) | String |
-| 18 | dtg | NATO-STANAG 2221 | Datum-Zeit-Gruppe des Fundes / der Messung
-[z. B. “260900Amar25”] | String |
-| 19 | reporting_unit | NATO-STANAG 2221 | Meldende Einheit 
-[z.B. “LLPiKp 270”] | String |
-| 20 | linkup_location | NATO-STANAG 2221 | Ort für Verbindungsaufnahme mit meldender Einheit (UTM-Format)
-[z.B. “347669, 5576127”] | String |
-| 21 | linkup_method | NATO-STANAG 2221 | Kommunikationsart für Verbindungsaufnahme mit meldender Einheit
-[z.B. “Funkfrequenz” , “Sichtzeichen”] | String |
-| 22 | type | NATO-STANAG 2221 | Art des Kampfmittels
-[z.B. Geschoss, 155mm / Mine, Panzerabwehr/Schützenabwehr / Granate, Hand] | String |
-| 23 | subtype | NATO-STANAG 2221 | Munitionssorte des Kampfmittels [z.B. HE / HE-FRAG / AP / HEAT / APHE / …] | String |
-| 24 | amount | NATO-STANAG 2221 | Anzahl der Kampfmittel 
-[z.B. 2 EA ("each"] | String |
-| 25 | description | NATO-STANAG 2221 | Freitextbeschreibung des Kampfmittels 
-[z.B. zylindrisches Geschoss, Kaliber ca. 155mm, mit kegelförmiger Spitze] | String |
-| 26 | location | NATO-STANAG 2221 | Fundort des Kampfmittels - MGRS
-[z.B.”32UNB, 347669, 5576127”] | String |
-| 27 | tactical_situation | NATO-STANAG 2221 | Einfluss des gefundenen Kampfmittels auf die eigene Auftragserfüllung 
-[”None” , “Low”, “Medium”, “High”] | String |
-| 28 | collateral_dmg | NATO-STANAG 2221 | Bereits eingetretene oder mögliche Begleitschäden 
-[z.B. “Funkturm als kritische Infrastruktur direkt nebenan”] | String |
-| 29 | protective_actions | NATO-STANAG 2221 | eingeleitete Schutzmaßnahmen [z.B. “umliegende Häuser evakuiert”] | String |
-| 30 | recommended_priority | NATO-STANAG 2221 | empfohlene Priorität gem. Bewertung der meldenden Einheit [”immediate” , “urgent”,  “routine”  , “no threat”]  | String |
-| 31 | rank_name | Eigene Definition | Messung durchgeführt durch
-[z.B. “HF Müller”] | String |
+| 1 | `id` | Eigene Definition | Eindeutige Fund-ID[z.B. “1,2,3,4,5,6”] | Number |
+| 2 | `sensor` | Eigene Definition | Messgerät [z.B. “Magnetometer”] | String |
+| 3 | `unit` | Eigene Definition | Einheit der Messung[z.B. “nT”, “m”, “EA”] | String |
+| 4 | `detection_confidence` | Eigene Definition | Wahrscheinlichkeit für Echtheit in %[z.B. 0.87, 99, 1] | Number |
+| 5 | `status` | Eigene Definition | Status[”Bestätigt” / “Unbestätigt”] | Boolean |
+| 6 | `source` | Eigene Definition | Trägerplattform [z.B. “UAV”, “UGV”] | String |
+| 7 | `depth_estimate` | Eigene Definition | Geschätzte Tiefe[z.B. -2.1, -0.3] | Number |
+| 8 | `last_udpate` | Eigene Definition | Letzte Aktualisierung[z. B. “260900Amar25”]   | String |
+| 9 | `image` | Eigene Definition | Optionales Bildmaterial |  |
+| 10 | `geotiff` | Eigene Definition | Georeferenziertes Bildmaterial (GeoTIFF) |  |
+| 11 | `hazard_id` | IMSMA | Minenfeld- oder Bereichs ID | String |
+| 12 | `hazard_status` | IMSMA | Status des Gebietes[”suspected”, “confirmed”] | String |
+| 13 | `land_use` | IMSMA | Aktuelle Landnutzung[z.B. Feld, Straße] | String |
+| 14 | `accessibility` | IMSMA | Zugangsbeschränkungen des sondierten Gebietes[Freitext] | String |
+| 15 | `survey_type` | IMSMA | Erkundungsmethode [”technical”, “non-technical”] | String |
+| 16 | `data_source` | IMSMA | Quelle der Information [”KI”, “NGO”, “Soldat”} | String |
+| 17 | `verfication_type` | IMSMA | Art der Überprüfung nach Sondierung[Freitext: “visuell”, “manuell”, “etc.”) | String |
+| 18 | `dtg` | NATO-STANAG 2221 | Datum-Zeit-Gruppe des Fundes / der Messung[z. B. “260900Amar25”] | String |
+| 19 | `reporting_unit` | NATO-STANAG 2221 | Meldende Einheit [z.B. “LLPiKp 270”] | String |
+| 20 | `linkup_location` | NATO-STANAG 2221 | Ort für Verbindungsaufnahme mit meldender Einheit (UTM-Format)[z.B. “347669, 5576127”] | String |
+| 21 | `linkup_method` | NATO-STANAG 2221 | Kommunikationsart für Verbindungsaufnahme mit meldender Einheit[z.B. “Funkfrequenz” , “Sichtzeichen”] | String |
+| 22 | `type` | NATO-STANAG 2221 | Art des Kampfmittels[z.B. Geschoss, 155mm / Mine, Panzerabwehr/Schützenabwehr / Granate, Hand] | String |
+| 23 | `subtype` | NATO-STANAG 2221 | Munitionssorte des Kampfmittels [z.B. HE / HE-FRAG / AP / HEAT / APHE / …] | String |
+| 24 | `amount` | NATO-STANAG 2221 | Anzahl der Kampfmittel [z.B. 2 EA ("each"] | String |
+| 25 | `description` | NATO-STANAG 2221 | Freitextbeschreibung des Kampfmittels [z.B. zylindrisches Geschoss, Kaliber ca. 155mm, mit kegelförmiger Spitze] | String |
+| 26 | `location` | NATO-STANAG 2221 | Fundort des Kampfmittels - MGRS[z.B.”32UNB, 347669, 5576127”] | String |
+| 27 | `tactical_situation` | NATO-STANAG 2221 | Einfluss des gefundenen Kampfmittels auf die eigene Auftragserfüllung [”None” , “Low”, “Medium”, “High”] | String |
+| 28 | `collateral_dmg` | NATO-STANAG 2221 | Bereits eingetretene oder mögliche Begleitschäden [z.B. “Funkturm als kritische Infrastruktur direkt nebenan”] | String |
+| 29 | `protective_actions` | NATO-STANAG 2221 | eingeleitete Schutzmaßnahmen [z.B. “umliegende Häuser evakuiert”] | String |
+| 30 | `recommended_priority` | NATO-STANAG 2221 | empfohlene Priorität gem. Bewertung der meldenden Einheit [”immediate” , “urgent”,  “routine”  , “no threat”]  | String |
+| 31 | `rank_name` | Eigene Definition | Messung durchgeführt durch[z.B. “HF Müller”] | String |
 
 ---
 
