@@ -356,7 +356,7 @@ Mine-GeoJSON ist ein offener, nicht-proprietärer Datenstandard. Er darf frei ge
 
 ## 13. Kontakt & Weiterentwicklung
 
-Der Datenstandard wurde initiiert durch den Cyber Innovation Hub der Bundeswehr und maßgeblich entwickelt unter der Projektleitung von Ulf Steden, Alexander Petri, Erik Krämer und der Luftlandepionierkompanie 270 im Rahmen des Innovationsvorhaben #172 - Minesweeper.
+Der Datenstandard wurde initiiert durch den Cyber Innovation Hub der Bundeswehr und maßgeblich entwickelt unter der Projektleitung von Alexander Petri, Ulf Steden, Erik Krämer und der Luftlandepionierkompanie 270 im Rahmen des Innovationsvorhaben #172 - Minesweeper.
 Youtube Link: https://youtu.be/I4TvcCWCnZo?si=7fIkJjQ65l3BrP6O
 
 Wir freuen uns über Ihre Kontaktaufnahme, wenn Sie Interesse an der Nutzung von Mine-GeoJSON haben oder uns Feedback geben möchten!
