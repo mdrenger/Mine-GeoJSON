@@ -11,7 +11,7 @@ A vendor-neutral GeoJSON standard for minefield reconnaissance data
 
 Dieses Handbuch beschreibt den Aufbau und die Anwendung des Datenstandards **Mine-GeoJSON**, eines interoperablen, offenen Formats zur standardisierten Bereitstellung von Detektionsdaten aus der abstandsfähigen Kampfmittelerkundung.
 
-Der Standard wurde im Rahmen eines Innovationsvorhabens des Cyber Innovation Hub der Bundeswehr in Zusammenarbeit mit den Luftlandepionieren 270 entwickelt, um die Vielzahl an proprietären Sensorformaten zu vereinheitlichen und die Integration in zentrale Führungssysteme zu ermöglichen. Ziel ist es, mit Mine-GeoJSON ein gemeinsames Lagebild aus heterogenen Detektionsquellen zu erzeugen, Daten vergleichbar zu machen und eine vernetzte Gefahreneinschätzung in SitaWare Frontline zu ermöglichen.
+Der Standard wurde im Rahmen eines Innovationsvorhabens des Cyber Innovation Hub der Bundeswehr in Zusammenarbeit mit der Luftlandepionierkompanie 270 entwickelt, um die Vielzahl an proprietären Sensorformaten zu vereinheitlichen und die Integration in zentrale Führungssysteme zu ermöglichen. Ziel ist es, mit Mine-GeoJSON ein gemeinsames Lagebild aus heterogenen Detektionsquellen zu erzeugen, Daten vergleichbar zu machen und eine vernetzte Gefahreneinschätzung in SitaWare Frontline zu ermöglichen.
 
 ---
 
@@ -374,6 +374,7 @@ Der Datenstandard wurde initiiert durch den Cyber Innovation Hub der Bundeswehr 
 Franklinstr. 10
 
 10587 Berlin
+bwi.fp.cih-innovation@bwi.de
 
 https://www.cyberinnovationhub.de/
 
