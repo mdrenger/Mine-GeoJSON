@@ -310,7 +310,9 @@ Mine-GeoJSON ist so gestaltet, dass es sich nahtlos in bestehende Informationssy
 ### Kompatible Plattformen
 
 - QGIS, ArcGIS, Kepler.gl, u.v.m.
-- Lageinformationssysteme mit JSON/GeoJSON-Schnittstelle
+- Lageinformationssysteme mit JSON/GeoJSON/Mine-GeoJSON-Schnittstelle
+
+- Erprobt wurde Mine-GeoJSON mit dem Plug-In "Minesweeper Connector" für Sitaware Frontline.  
 
 ### Empfehlungen zur Umsetzung
 
@@ -326,7 +328,7 @@ Zur Sicherstellung der Datenqualität empfiehlt Mine-GeoJSON folgende Konvention
 
 ### Dateibenennung
 
-- `minegeojson_<gebiet>_<datum>.geojson`
+- `minegeojson_<gebiet>_<datum>.minegeojson`
 - GeoTIFF: `minegeo_<hazard_id>.tif`
 
 ### Zeitangaben
